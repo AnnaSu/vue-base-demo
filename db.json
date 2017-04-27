@@ -1,0 +1,21 @@
+{
+    "teamMembers": [{
+            "id": 1,
+            "avatar": "img/team/1.jpg",
+            "name": "Rulin",
+            "jobTitle": "明日之星冰霸王"
+        },
+        {
+            "id": 2,
+            "avatar": "img/team/2.jpg",
+            "name": "Anna Su",
+            "jobTitle": "天生傲嬌小柯南"
+        },
+        {
+            "id": 3,
+            "avatar": "http://placekitten.com/g/225/225",
+            "name": "Jerry Hong",
+            "jobTitle": "全端打雜碼農"
+        }
+    ]
+}
