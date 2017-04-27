@@ -8,22 +8,15 @@ var app = new Vue({
         buttonText: 'More',
         coverUrl: 'url(img/header-bg.jpg)',
         buttonTip: '點擊按鈕看更多介紹',
-        teamMembers: [{
-                avatar: 'img/team/1.jpg',
-                name: 'Rulin',
-                jobTitle: '明日之星冰霸王'
-            },
-            {
-                avatar: 'img/team/2.jpg',
-                name: 'Anna Su',
-                jobTitle: '天生傲嬌小柯南'
-            },
-            {
-                avatar: 'http://placekitten.com/g/225/225',
-                name: 'Jerry Hong',
-                jobTitle: '全端打雜碼農'
-            }
-        ]
+        teamMembers: []
+    },
+    created: function() {
+        var self = this;
+        fetch('http://localhost:3000/teamMembers')
+        .then(function(res) {
+            return res.json();
+        })
+        .then(function(data) { self.teamMembers = data; })
     }
 })
 
